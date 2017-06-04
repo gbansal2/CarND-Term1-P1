@@ -1,25 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Finding Lane Lines on the Road**
-
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
-
-[//]: # (Image References)
-
-[image1]: ./test_images_output/solidWhiteCurve.jpg "solidWhiteCurve.jpg"
-[image2]: ./test_images_output/solidWhiteRight.jpg "solidWhiteRight.jpg"
-[image3]: ./test_images_output/solidYellowCurve.jpg "solidYellowCurve.jpg"
----
-
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
@@ -35,20 +15,18 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 Some example outputs for the test images are shown below: 
 
-![image1](./test_images_output/solidWhiteCurve.jpg "solidWhiteCurve.jpg")
-![alt text][image2]
-![alt text][image3]
+![image1](./test_images_output/solidWhiteCurve.jpg "solidWhiteCurve.jpg" | width=50)
+![image2](./test_images_output/solidWhiteRight.jpg "solidWhiteRight.jpg" | width=50)
+![image3](./test_images_output/solidYellowCurve.jpg "solidYellowCurve.jpg" | width=50)
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-There are a couple of shortcomings - 
+There are a few shortcomings - 
 1. Sometimes the line segments which correspond to lane separators further away from the "camera", i.e towards the middle of the image, are not detected well. This is because they are small in size. 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+2. The lanes are not properly detected when the road curves. 
+3. Yellow lane separators sometimes donot provide enough gradients for the canny edge detection.
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement could be to convert yellow lane separators to white color before applying canny edge detection.
 
-Another potential improvement could be to ...
