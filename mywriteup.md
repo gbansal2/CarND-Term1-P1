@@ -35,7 +35,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 Some example outputs for the test images are shown below: 
 
-![alt text][image1]
+![image1](./test_images_output/solidWhiteCurve.jpg "solidWhiteCurve.jpg")
 ![alt text][image2]
 ![alt text][image3]
 
