@@ -1,5 +1,10 @@
 # **Finding Lane Lines on the Road** 
 
+[//]: # (Image References)
+[image1]: ./test_images_output/solidWhiteCurve.jpg "SolidWhiteCurve" 
+[image2]: ./test_images_output/solidWhiteRight.jpg "SolidWhiteRight" 
+[image3]: ./test_images_output/solidYellowCurve.jpg "SolidYellowCurve"
+
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
@@ -15,13 +20,11 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 Some example outputs for the test images are shown below: 
 
-![](./test_images_output/solidWhiteCurve.jpg "solidWhiteCurve.jpg" | width=50)
+![image1]
+![image2]
+![image3]
 
 
-![image2](./test_images_output/solidWhiteRight.jpg "solidWhiteRight.jpg" | width=50)
-
-
-![image3](./test_images_output/solidYellowCurve.jpg "solidYellowCurve.jpg" | width=50)
 
 ### 2. Identify potential shortcomings with your current pipeline
 
